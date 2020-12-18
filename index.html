@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>My Final Project</title>
+</head>
+<body>
+    <div class="body">
+        <div class="top-board">
+            <h1>WELCOME to Lotre Ticket</h1>
+            <h1 id="your-name"></h1>
+        </div>
+        <div class="list-display">
+            <h3 id="current-point" class="display"></h3>
+            <h3 id="your-ticket" class="display"></h3>
+        </div>
+        <div>
+            <img src="./img/clover1.png" alt="clover" class="gambar-tengah">
+        </div>
+
+        <div class="hadiah-container">
+
+            <div>
+                <img src="./img/diamond-ticket.png" id="prize-1" onclick="reset()" class="hadiah">
+            </div>
+
+            <div>
+                <img src="./img/gold-ticket.png" id="prize-2" onclick="reset()" class="hadiah">
+            </div>
+
+            <div>
+                <img src="./img/silver-ticket.png" id="prize-3" onclick="reset()" class="hadiah">
+            </div>
+
+            <div>
+                <img src="./img/bronze-ticket.png" id="prize-4" onclick="reset()" class="hadiah">
+            </div>
+
+            <div>
+                <h1 id="zonk" onclick="reset()">Maaf Anda Kurang Beruntung</h1>
+            </div>
+
+        </div>
+        <button id="button" onclick="startGacha()">TRY YOUR LUCK</button>
+        <div class="top-up-place">
+            <span class="legend">Top Up Points: </span>
+            <button onclick="up10()" class="top-up">+10 Point</button>
+            <button onclick="up20()" class="top-up">+20 Point</button>
+            <button onclick="up30()" class="top-up">+30 Point</button>
+            <button onclick="up40()" class="top-up">+40 Point</button>
+        </div>
+        <div class="list-prize">
+            <h1>List Prize</h1>
+            <div class="card-prize diamond">
+                <img src="./img/diamond-ticket.png" alt="diamond-ticket" style="width: 156px;">
+                <h3>Diamond - ticket</h3>
+                <h4>+40 Ticket</h4>    
+            </div>
+            <div class="card-prize gold">
+                <img src="./img/gold-ticket.png" alt="gold-ticket">
+                <h3>Gold - ticket</h3>
+                <h4>+30 Ticket</h4>
+            </div>
+            <div class="card-prize silver">
+                <img src="./img/silver-ticket.png" alt="silver-ticket"  style="width: 193px;">
+                <h3>Silver - ticket</h3>
+                <h4>+20 Ticket</h4>
+            </div>
+            <div class="card-prize bronze">
+                <img src="./img/bronze-ticket.png" alt="bronze-ticket" style="width: 235px;">
+                <h3>Bronze - ticket</h3>
+                <h4>+10 Ticket</h4> 
+            </div>
+        </div>
+    </div>
+    <script src="./js/main.js"></script>
+</body>
+</html>
