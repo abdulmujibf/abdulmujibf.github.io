@@ -122,7 +122,7 @@ function reset() {
 //Top Up Point dan Mengurangi ticket
 function up10(){
     if(ticketPoint < 10){
-        return alert(`Ticket Kamu Kurang`)
+        alert(`Ticket Kamu Kurang`)
     }else{
         ticketPoint -= 10
         currentPoint += 10
