@@ -40,7 +40,6 @@ html{
 }
 
 .top-board h1 {
-    color: rgba(245, 245, 245, 0);
     text-align: center;
     font-size: 50px;
     animation: rgb 25s infinite;
@@ -52,7 +51,9 @@ html{
 @keyframes rgb{
     from {color: rgb(0, 0, 0);}
     40% {color: rgb(0, 167, 0);}
-    to {color: rgb(240, 8, 8);}
+    80%{color: rgb(0, 0, 255);}
+    100% {color: rgb(240, 8, 8);}
+    to {color: rgb(0, 0, 0);}
 }
 
 .list-display{
